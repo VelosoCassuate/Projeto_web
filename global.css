@@ -34,6 +34,7 @@ header {
   width: 100%;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .navigation-bar {
@@ -41,7 +42,7 @@ header {
   justify-content: center;
   padding: 8px 0;
   gap: 32px;
-  /* background-color: #000; */
+  /*background-color: #000; */
 }
 
 .navigation-bar a {
@@ -98,6 +99,7 @@ footer {
   width: 30px;
   height: 3px;
   background-color: var(--primary-color);
+
 }
 
 .nav-button {
@@ -105,6 +107,7 @@ footer {
   flex-direction: column;
   display: flex;
   gap: 4px;
+  margin-left: auto;
 }
 
 .description {
