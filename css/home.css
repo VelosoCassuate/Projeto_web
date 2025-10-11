@@ -1,0 +1,90 @@
+:root {
+  --primary-color: #824bb6;
+  --secondary-color: #b29cc9;
+}
+
+/* .description h2 {
+  font-size: 5vw;
+}
+.description p {
+  font-size: 3.5vw;
+} */
+.productcs-container {
+  margin: 12px 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 8px;
+}
+.product {
+  transition: 0.4s ease;
+  flex-direction: column;
+  display: flex;
+  gap: 8px;
+  border-radius: 12px;
+  background: linear-gradient(45deg, #eee, #dbc0e7);
+  padding: 12px;
+}
+.product:hover {
+  scale: 1.05;
+}
+.product img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.product-details-button {
+  width: 100%;
+  padding: 4px;
+  font-size: 12pt;
+  border-radius: 6px;
+  border: none;
+  margin: 2px 0;
+  color: #000;
+  background-color: var(--secondary-color);
+}
+.user-feedback {
+  margin: 12px 0;
+  gap: 6px;
+  display: flex;
+  flex-direction: column;
+  /* background-color: #000; */
+  /* padding: 12px; */
+}
+
+.user-feedback input,
+.user-feedback textarea,
+.user-feedback select {
+  padding: 4px;
+  outline: none;
+  border-radius: 4px;
+  min-width: 100%;
+  max-width: 100%;
+}
+
+.user-feedback textarea {
+  /* height: 100px; */
+  min-height: 100px;
+  max-height: 100px;
+}
+
+#submit-feedback-button {
+  cursor: pointer;
+  font-size: 12pt;
+  border: 1px solid var(--primary-color);
+  background-color: var(--secondary-color);
+}
+
+.more-products {
+  text-decoration: none;
+  border: 1px solid var(--primary-color);
+  padding: 8px;
+  border-radius: 4px;
+  width: 100px;
+  text-align: center;
+  /* background-color: ; */
+}
+.some-products {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}

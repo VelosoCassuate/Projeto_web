@@ -1,0 +1,79 @@
+:root {
+  --primary-color: #824bb6;
+  --secondary-color: #b29cc9;
+}
+main {
+  width: 100%;
+}
+.search {
+  /* background-color: red; */
+  display: flex;
+  gap: 8px;
+}
+.search-bar {
+  flex: 1;
+  padding: 8px;
+  border-radius: 8px;
+  background-color: #e7e7e7;
+  display: flex;
+}
+.search-bar img {
+  width: 20px;
+}
+.search-bar input {
+  padding: 0 8px;
+  font-size: 1em;
+  flex: 1;
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+.search-icon {
+  cursor: pointer;
+}
+.product {
+  flex-direction: column;
+  display: flex;
+  gap: 8px;
+  border-radius: 12px;
+  background: linear-gradient(45deg, #eee, #dbc0e7);
+  padding: 12px;
+}
+.product img {
+  width: 100%;
+  border-radius: 8px;
+}
+.product p {
+  max-height: 100px;
+  overflow: auto;
+}
+.product button {
+  margin: 8px 0;
+}
+
+.empacotavel span::before {
+  border-radius: 100%;
+  border: #fff 2px solid;
+  transform: translate(-20%, -20%);
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  background-color: var(--primary-color);
+  content: "";
+}
+.product-details-button {
+  width: 100%;
+  padding: 4px;
+  font-size: 12pt;
+  border-radius: 6px;
+  border: none;
+  margin: 2px 0;
+  color: #000;
+  background-color: var(--secondary-color);
+}
+.all-products {
+  margin: 12px 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(170px, 1fr));
+  gap: 8px;
+}
