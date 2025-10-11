@@ -16,13 +16,14 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+
 }
 
 .exemplo {
   padding: 12px;
   /* background-color: aqua; */
   /* background-color: #000; */
-  max-width: 1000px;
+  max-width: 1750px;
   width: 100%;
 }
 
@@ -35,8 +36,8 @@ header {
   margin-top: -12px;
   width: 100%;
   display: flex;
-  background-color: white;
-  justify-content: space-between;
+  background-color: red;
+  justify-content: center;
   align-items: center;
   z-index: 1000;
 }
@@ -65,6 +66,7 @@ header {
 
 main {
   padding-top: 50px;
+
 }
 
 footer {
@@ -107,7 +109,7 @@ footer {
   width: 30px;
   height: 3px;
   background-color: var(--primary-color);
-
+  margin-right: 90px;
 }
 
 .nav-button {
@@ -115,7 +117,7 @@ footer {
   flex-direction: column;
   display: flex;
   gap: 4px;
-
+  
 }
 
 .description {
