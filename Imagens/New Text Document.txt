@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="pt">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Fábrica de Conservas — Conservas Santa Clara</title>
+  <style>
+    /* Reset simples */
+    *{box-sizing:border-box;margin:0;padding:0}
+    html,body{height:100%;font-family:system-ui,-apple-system,Segoe UI,Roboto,"Helvetica Neue",Arial;line-height:1.4;color:#222}
+    a{color:inherit;text-decoration:none}
+    img{max-width:100%;display:block}
+
+    /* Layout geral */
+    .container{max-width:1100px;margin:0 auto;padding:20px}
+    header{background:#f6f3ea;border-bottom:4px solid #e0b24a}
+    .topbar{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:18px 20px}
+    .brand{display:flex;align-items:center;gap:12px}
+    .logo{width:56px;height:56px;border-radius:8px;background:linear-gradient(135deg,#f2a541,#d94b2b);display:flex;align-items:center;justify-content:center;color:#fff;font-weight:700;font-size:18px}
+    nav ul{display:flex;gap:16px;list-style:none}
+    .cta{background:#d94b2b;color:#fff;padding:10px 14px;border-radius:8px;font-weight:600}
+
+    /* Hero */
+    .hero{display:grid;grid-template-columns:1fr 420px;gap:24px;align-items:center;padding:36px 20px}
+    .hero h1{font-size:2rem;margin-bottom:10px}
+    .hero p{color:#444;margin-bottom:18px}
+    .hero .actions{display:flex;gap:12px;flex-wrap:wrap}
+    .btn{padding:12px 16px;border-radius:10px;font-weight:600;cursor:pointer;border:0}
+    .btn--primary{background:#d94b2b;color:#fff}
+    .btn--outline{background:transparent;border:2px solid #d94b2b;color:#d94b2b}
+
+    .hero-card{background:#fff;border-radius:12px;padding:18px;box-shadow:0 8px 20px rgba(20,20,20,0.06)}
+    .hero-card small{display:block;color:#666;margin-bottom:8px}
+    .stats{display:flex;gap:12px;flex-wrap:wrap}
+    .stat{flex:1;min-width:120px;background:#fff;border-radius:8px;padding:12px;text-align:center}
+
+    /* Produtos */
+    .section{padding:36px 20px}
+    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+    .card{background:#fff;border-radius:12px;padding:14px;box-shadow:0 6px 16px rgba(20,20,20,0.06);display:flex;flex-direction:column;gap:10px}
+    .card h3{font-size:1.05rem}
+    .tags{display:flex;gap:8px;flex-wrap:wrap}
+    .tag{font-size:12px;padding:6px 8px;border-radius:999px;background:#f1f1f1}
+
+    /* About / Contact */
+    .two-cols{display:grid;grid-template-columns:1fr 340px;gap:20px;align-items:start}
+    form{background:#fff;padding:16px;border-radius:10px;box-shadow:0 6px 16px rgba(20,20,20,0.05);display:flex;flex-direction:column;gap:10px}
+    input,textarea,select{padding:10px;border:1px solid #ddd;border-radius:8px;font-family:inherit}
+    button[type="submit"]{background:#2b6f3b;color:#fff;border:0;padding:10px;border-radius:8px;font-weight:700;cursor:pointer}
+
+    /* Footer */
+    footer{background:#111;text-align:center;color:#ddd;padding:18px 10px;margin-top:26px}
+    footer a{color:#f2c06a}
+
+    /* Responsividade */
+    @media (max-width:900px){
+      .hero{grid-template-columns:1fr; text-align:center}
+      .two-cols{grid-template-columns:1fr}
+      .grid{grid-template-columns:repeat(2,1fr)}
+      nav ul{display:none}
+    }
+    @media (max-width:520px){
+      .grid{grid-template-columns:1fr}
+      .logo{width:48px;height:48px;font-size:16px}
+      .hero h1{font-size:1.6rem}
+      .topbar{padding:12px}
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container topbar">
+      <div class="brand">
+        <div class="logo" aria-hidden="true">CS</div>
+        <div>
+          <div style="font-weight:700">Conservas Santa Clara</div>
+          <small style="color:#666">Qualidade que conserva o sabor</small>
+        </div>
+      </div>
+
+      <nav aria-label="Menu principal">
+        <ul>
+          <li><a href="#produtos">Produtos</a></li>
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </nav>
+
+      <div>
+        <a class="cta" href="#contato">Peça um orçamento</a>
+      </div>
+    </div>
+
+    <div class="container hero" role="region" aria-labelledby="hero-title">
+      <div>
+        <h1 id="hero-title">Conservas artesanais com padrão industrial</h1>
+        <p>Frios, legumes, frutas e molhos — produzidos com matérias-primas selecionadas, controle rigoroso de qualidade e embalagem que prolonga o sabor.</p>
+        <div class="actions">
+          <button class="btn btn--primary" onclick="location.href='#produtos'">Ver Produtos</button>
+          <button class="btn btn--outline" onclick="location.href='#sobre'">Como produzimos</button>
+        </div>
+      </div>
+
+      <aside class="hero-card" aria-label="Destaques">
+        <small>Produção e destaque</small>
+        <div style="margin-bottom:12px">
+          <strong>Desde 1998</strong>
+          <p style="color:#666;font-size:13px;margin-top:6px">Tradição + tecnologia.</p>
+        </div>
+        <div class="stats">
+          <div class="stat">
+            <strong>120+</strong>
+            <div style="font-size:13px;color:#666">Clientes ativos</div>
+          </div>
+          <div class="stat">
+            <strong>30 toneladas</strong>
+            <div style="font-size:13px;color:#666">Produzidas/mês</div>
+          </div>
+          <div class="stat">
+            <strong>ISO9001</strong>
+            <div style="font-size:13px;color:#666">Certificação</div>
+          </div>
+        </div>
+      </aside>
+    </div>
+  </header>
+
+  <main class="container" id="main">
+    <!-- Produtos -->
+    <section id="produtos" class="section" aria-labelledby="produtos-title">
+      <h2 id="produtos-title" style="margin-bottom:12px">Nossos Produtos</h2>
+      <p style="color:#555;margin-bottom:18px">Embalagens variadas: latas, frascos e sachês — fabricação própria e também private label.</p>
+
+      <div class="grid" role="list">
+        <article class="card" role="listitem">
+          <img src="https://via.placeholder.com/400x220?text=Tomate+Pelado" alt="Lata de tomate pelado">
+          <h3>Tomate Pelado</h3>
+          <p style="color:#555;font-size:14px">Tomates maduros, seleção manual, cozimento e envase a vácuo para preservar o sabor.</p>
+          <div class="tags">
+            <span class="tag">Lata 400g</span>
+            <span class="tag">Sem conservantes</span>
+          </div>
+        </article>
+
+        <article class="card" role="listitem">
+          <img src="https://via.placeholder.com/400x220?text=Milho+Doce" alt="Lata de milho doce">
+          <h3>Milho Doce</h3>
+          <p style="color:#555;font-size:14px">Grãos crocantes, processo esterilizado e controle de textura ideal para saladas e receitas.</p>
+          <div class="tags">
+            <span class="tag">Lata 300g</span>
+            <span class="tag">Controle de qualidade</span>
+          </div>
+        </article>
+
+        <article class="card" role="listitem">
+          <img src="https://via.placeholder.com/400x220?text=Atum+em+Óleo" alt="Lata de atum em óleo">
+          <h3>Atum em Óleo</h3>
+          <p style="color:#555;font-size:14px">Atum selecionado, cozido e embalado com óleo neutro para melhor conservação.</p>
+          <div class="tags">
+            <span class="tag">Lata 170g</span>
+            <span class="tag">Rico em proteína</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Sobre / Contato -->
+    <section class="section two-cols" id="sobre" aria-labelledby="sobre-title">
+      <div>
+        <h2 id="sobre-title">Sobre a nossa fábrica</h2>
+        <p style="color:#555;margin-bottom:12px">Unimos técnicas tradicionais e automação moderna para garantir segurança alimentar e sabor autêntico. Possuímos laboratório interno, controles de temperatura e equipe treinada.</p>
+
+        <h3 style="margin-top:18px">Serviços</h3>
+        <ul style="margin-top:8px;color:#555;list-style:disc;padding-left:18px">
+          <li>Produção própria e private label</li>
+          <li>Embalagens personalizadas</li>
+          <li>Entrega e logística para revenda</li>
+          <li>Análises físico-químicas e microbiológicas</li>
+        </ul>
+
+        <h3 style="margin-top:14px">Qualidade</h3>
+        <p style="color:#555">Inspeções periódicas, rastreabilidade do lote e atendimento às normas locais e internacionais.</p>
+      </div>
+
+      <aside id="contato" aria-labelledby="contato-title">
+        <h2 id="contato-title" style="margin-bottom:10px">Peça um Orçamento</h2>
+        <form onsubmit="event.preventDefault(); alert('Obrigado! Recebemos o seu pedido.');">
+          <label>
+            Nome
+            <input type="text" name="nome" required placeholder="Seu nome completo">
+          </label>
+          <label>
+            Empresa
+            <input type="text" name="empresa" placeholder="Nome da empresa (opcional)">
+          </label>
+          <label>
+            Produto de interesse
+            <select name="produto">
+              <option>Tomate Pelado</option>
+              <option>Milho Doce</option>
+              <option>Atum em Óleo</option>
+              <option>Outro</option>
+            </select>
+          </label>
+          <label>
+            Quantidade aproximada
+            <input type="text" name="quantidade" placeholder="Ex.: 1000 unidades">
+          </label>
+          <label>
+            Mensagem
+            <textarea name="mensagem" rows="4" placeholder="Detalhes, prazo, especificações..."></textarea>
+          </label>
+          <button type="submit">Enviar pedido</button>
+        </form>
+      </aside>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container" style="display:flex;flex-direction:column;gap:8px;align-items:center;">
+      <div style="font-weight:700">Conservas Santa Clara</div>
+      <div style="font-size:13px;color:#bbb">Rua da Indústria, 123 — Zona Industrial • +258 84 000 0000 • <a href="mailto:comercial@conservassc.co.mz">comercial@conservassc.co.mz</a></div>
+      <small style="color:#888">© <span id="year"></span> Todos os direitos reservados.</small>
+    </div>
+  </footer>
+
+  <script>
+    // Ajuste de ano no footer
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
