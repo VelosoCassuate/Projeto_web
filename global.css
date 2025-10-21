@@ -13,7 +13,6 @@
 
 * {
   font-family: 'MinhaFonte', sans-serif;
-  ;
 
   margin: 0;
   box-sizing: border-box;
@@ -138,15 +137,11 @@ footer {
   gap: 4px;
 }
 
-
-
-
-
 #titulo {
   color: #000000;
 }
 
-p {
+#ourSitePresentation {
   color: #ffffff;
 }
 

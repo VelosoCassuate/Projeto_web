@@ -1,19 +1,25 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Login Moderno</title>
+    <link rel="stylesheet" href="../css/login.css">
 </head>
 <body>
-    <form action="" class="container">
-        <h2>Login</h2>
-        <label for="iemail">email</label>
-        <input required name="email" id="iemail" type="email">
-        <label for="ichave">chave</label>
-        <input required name="chave" id="ichave" type="password">
-        <input type="submit">
-        <input id="itermnos" type="checkbox"> <label for="itermnos">eu aceito os termos e condicoes</label>
-    </form>
+    <div class="container">
+        <form class="form">
+            <h2>Entrar</h2>
+            <div class="campo">
+                <input type="email" id="email" required>
+                <label for="email">Email</label>
+            </div>
+            <div class="campo">
+                <input type="password" id="chave" required>
+                <label for="chave">Chave</label>
+            </div>
+            <button type="submit">Login</button>
+        </form>
+    </div>
 </body>
 </html>

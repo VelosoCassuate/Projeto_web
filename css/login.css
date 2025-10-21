@@ -1,0 +1,83 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #3b82f6, #9333ea);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    background: #fff;
+    padding: 40px;
+    border-radius: 20px;
+    width: 350px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.formulario h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #333;
+    font-weight: 600;
+}
+
+.campo {
+    position: relative;
+    margin-bottom: 25px;
+}
+
+.campo input {
+    width: 100%;
+    padding: 12px 10px;
+    border: none;
+    border-bottom: 2px solid #ccc;
+    outline: none;
+    font-size: 16px;
+    transition: 0.3s;
+    background: transparent;
+}
+
+.campo label {
+    position: absolute;
+    left: 10px;
+    top: 12px;
+    color: #888;
+    pointer-events: none;
+    transition: 0.3s;
+}
+
+.campo input:focus {
+    border-color: #3b82f6;
+}
+
+.campo input:focus + label,
+.campo input:valid + label {
+    top: -10px;
+    font-size: 12px;
+    color: #3b82f6;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    background: linear-gradient(90deg, #3b82f6, #9333ea);
+    color: #fff;
+    font-size: 16px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 10px rgba(59, 130, 246, 0.4);
+}

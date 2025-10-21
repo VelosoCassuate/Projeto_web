@@ -11,6 +11,7 @@ main {
   flex: 1;
   padding: 8px;
   border-radius: 8px;
+  border: 1px solid var(--header-color);
   background-color: #e7e7e7;
   display: flex;
 }
@@ -65,7 +66,7 @@ main {
   border-radius: 6px;
   border: none;
   margin: 2px 0;
-  color: #000;
+  color: white;
   background-color: var(--header-color);
 }
 .all-products {
