@@ -29,6 +29,17 @@ main {
 .search-icon {
   cursor: pointer;
 }
+
+.filter-button {
+ border-radius: 5px;
+ border-color: var(--header-color);
+  
+}
+.filter-button img{
+  width: 30px;
+  height: 30px;
+  
+}
 .product {
   flex-direction: column;
   display: flex;

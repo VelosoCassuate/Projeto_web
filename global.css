@@ -83,7 +83,8 @@ main {
 
 .navigation-bar a:hover {
   padding: 7px;
-  border: 1px var(--primary-color) solid;
+  border: 1px var(--header-color) solid;
+  color: var(--header-color);
 }
 
 footer {
