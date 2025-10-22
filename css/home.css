@@ -89,13 +89,15 @@
 #submit-feedback-button {
   cursor: pointer;
   font-size: 12pt;
+  color: white;
   border: 1px solid var(--primary-color);
-  background-color: var(--secondary-color);
+  background-color: var(--header-color);
 }
 
 .more-products {
   text-decoration: none;
-  border: 1px solid var(--primary-color);
+  color: white;
+  background-color: var(--header-color);
   padding: 8px;
   border-radius: 4px;
   width: 100px;
