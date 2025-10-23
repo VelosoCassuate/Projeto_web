@@ -3,8 +3,6 @@ const menu = document.getElementById("menu");
 
 var menuIsVisible = false;
 
-// alert("opa");
-
 if (window.innerWidth <= 540) {
   menu.style = "display: none";
 }
