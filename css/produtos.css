@@ -40,6 +40,10 @@ main {
   height: 30px;
   
 }
+.product-image{
+  width: 200px;
+  height: 300px;
+}
 .product {
   flex-direction: column;
   display: flex;

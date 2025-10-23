@@ -1,91 +1,126 @@
-
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
 }
 
 body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  /* empilha header, main e footer */
+  background-color: #f2f2f2;
 
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
+main {
+  flex: 1;
+  /* ocupa o espaço livre */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+
+  /* garante que fique abaixo do header e acima do footer */
+}
+
+
+footer {
+  background-color: #0a2540;
+  color: white;
+  text-align: center;
+  padding: 5px 0;
+  width: 100%;
+  margin-top: 50px;
+  /* garante que ocupe toda a largura */
+}
+
+
+
+
 .container {
-    background: #fff;
-    padding: 40px;
-    border-radius: 20px;
-    width: 550px;
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  background: #fff;
+  padding: 40px;
+  border-radius: 20px;
+  width: 550px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
 }
 
 .form h2 {
-    text-align: center;
-    margin-bottom: 30px;
-    color: #333;
-    font-weight: 600;
+  text-align: center;
+  margin-bottom: 30px;
+  color: #333;
+  font-weight: 600;
 }
 
 .campo {
-    position: relative;
-    margin-bottom: 25px;
+  position: relative;
+  margin-bottom: 25px;
 }
 
 .campo input {
-    width: 100%;
-    padding: 12px 10px;
-    border: none;
-    border-bottom: 2px solid #ccc;
-    outline: none;
-    font-size: 16px;
-    transition: 0.3s;
-    background: transparent;
+  width: 100%;
+  padding: 12px 10px;
+  border: none;
+  border-bottom: 2px solid #ccc;
+  outline: none;
+  font-size: 16px;
+  transition: 0.3s;
+  background: transparent;
 }
 
 .campo label {
-    position: absolute;
-    left: 10px;
-    top: 12px;
-    color: #888;
-    pointer-events: none;
-    transition: 0.3s;
+  position: absolute;
+  left: 10px;
+  top: 12px;
+  color: #888;
+  pointer-events: none;
+  transition: 0.3s;
 }
 
 .campo input:focus {
-    border-color: #3b82f6;
+  border-color: #3b82f6;
 }
 
-.campo input:focus + label,
-.campo input:valid + label {
-    top: -10px;
-    font-size: 12px;
-    color: #3b82f6;
+.campo input:focus+label,
+.campo input:valid+label {
+  top: -10px;
+  font-size: 12px;
+  color: #3b82f6;
 }
 
 button {
-    margin-top: 25px;
-    width: 100%;
-    padding: 12px;
-    border: none;
-    background-color: var(--header-color);
-    color: #fff;
-    font-size: 16px;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: 0.3s;
+  margin-top: 25px;
+  width: 100%;
+  padding: 12px;
+  border: none;
+  background-color: var(--header-color);
+  color: #fff;
+  font-size: 16px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
 }
 
 button:hover {
-    transform: scale(1.05);
-    box-shadow: 0 0 10px rgba(59, 130, 246, 0.4);
+  transform: scale(1.05);
+  box-shadow: 0 0 10px rgba(59, 130, 246, 0.4);
 }
 
-#loginArea{
-    margin-top: 20px;
-    text-align: center;
+#loginArea {
+  margin-top: 20px;
+  text-align: center;
+}
+
+footer {
+  margin: 0;
+}
+
+footer p {
+  color: white;
+  text-align: center;
+  margin-top: 5px;
 }
 
 /*MEDIA QUERIES - INICIO*/
@@ -94,33 +129,32 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  display: flex;
-  justify-content: center; 
-  align-items: center;    
-  height: 100vh;         
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
 
-.container {
+.login-container {
   background-color: white;
   padding: 20px;
   border-radius: 10px;
   height: 400px;
   width: 350px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-  transition: width 0.3s ease; 
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transition: width 0.3s ease;
 }
 
-
 @media (min-width: 768px) {
-  .container {
+  .login-container {
     width: 480px;
   }
 }
 
 
 @media (min-width: 1200px) {
-  .container {
+  .login-container {
     width: 600px;
   }
 }
+
 /*MEDIA QUERIES - FIM*/
