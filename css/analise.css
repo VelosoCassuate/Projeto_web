@@ -4,13 +4,9 @@
     --secondary-color: #fff5e1;
     --details-color: #d4af37;
     --font-color: #076BB3;
-
     --background-color: #eaf6ff;
-
     --text-color: black;
-
     --accent: #0077ff;
-    /* azul forte para destaque principal */
     --accent-2: #00b4d8;
 
 }
@@ -35,6 +31,9 @@
 
 .shine {
     color: var(--header-color);
+}
+#menu a{
+  margin-top: 12px;
 }
 
 html {
@@ -69,9 +68,7 @@ header {
     height: 200px;
     background-color: var(--accent);
     padding: 10px 0 0 10px;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
-
-
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
 }
 
 nav a {
