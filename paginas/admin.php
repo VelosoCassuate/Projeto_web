@@ -5,18 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Analise de Producao </title>
     <link rel="stylesheet" href="../css/analise.css">
+    <link rel="stylesheet" href="./../global.css">
 </head>
 <body>
-
     <header>
-        <span class="logo"><span class="shine">B</span>Conserves</span>
-        <nav id="menu" class="navigation-bar">
-            <a href="/index.html">Analise de Produção</a>
-            <a href="/paginas/produtos.html">Consultas Produtos</a>
-            <a href="login.html">Gestão de arquivos</a>
-        </nav>
-
-    </header>
+    <span class="logo"><span class="shine">B</span>Conserves</span>
+    <nav id="menu" class="navigation-bar">
+       <a href="../index.php">Analise de Produção</a>
+            <a href="produtos.php">Consultas Produtos</a>
+            <a href="login.php">Gestão de arquivos</a>
+    </nav>
+    <span id="nav-button" class="nav-button">
+      <span></span>
+      <span></span>
+      <span></span>
+    </span>
+  </header>
 
     <main>
         <section class="cardboard">

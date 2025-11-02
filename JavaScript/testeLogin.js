@@ -4,7 +4,7 @@ const chave = localStorage.getItem("chave")
 
 function enviarMensagem() {
     if (user == null || chave == null)
-        window.open('./../paginas/login.html', '_self');
+        window.open('./../paginas/login.php', '_self');
     // alert(user + "  " + chave)
 }
 

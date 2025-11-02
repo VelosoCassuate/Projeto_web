@@ -13,10 +13,10 @@
     <header>
         <span class="logo"><span class="shine">B</span>Conserves</span>
         <nav id="menu" class="navigation-bar">
-            <a href="/index.html">Página inicial</a>
-            <a href="/paginas/produtos.html">Produtos</a>
-            <a href="login.html">Contacto</a>
-            <a href="sobre nós.html">Sobre nós</a>
+            <a href="../index.php">Página inicial</a>
+            <a href="produtos.php">Produtos</a>
+            <a href="login.php">Contacto</a>
+            <a href="sobre nós.php">Sobre nós</a>
         </nav>
         <span id="nav-button" class="nav-button">
             <span></span>

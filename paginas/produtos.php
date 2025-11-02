@@ -6,18 +6,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Produtos</title>
   <script defer src="/JavaScript/global.js"></script>
-  <link rel="stylesheet" href="/global.css" />
-  <link rel="stylesheet" href="/css/produtos.css" />
+  <link rel="stylesheet" href="../global.css" />
+  <link rel="stylesheet" href="../css/produtos.css" />
 </head>
 
 <body>
   <header>
     <span class="logo"><span class="shine">B</span>Conserves</span>
     <nav id="menu" class="navigation-bar">
-      <a href="/index.html">Página inicial</a>
-      <a href="/paginas/produtos.html">Produtos</a>
-      <a href="login.html">Contacto</a>\
-      <a href="sobre nós.html">Sobre nós</a>
+      <a href="../index.php">Página inicial</a>
+      <a href="produtos.php">Produtos</a>
+      <a href="login.php">Contacto</a>
+      <a href="sobre nós.php">Sobre nós</a>
     </nav>
     <span id="nav-button" class="nav-button">
       <span></span>
@@ -29,7 +29,7 @@
     <main>
       <section class="search">
         <div class="search-bar">
-          <img class="search-icon" src="/Imagens/search.svg" alt="" />
+          <img class="search-icon" src="../Imagens/search.svg" alt="" />
           <input type="text" placeholder="meu peixe favorito" />
         </div>
         <button title="filtrar" class="filter-button"><img src="../Imagens/filtro.png" alt="filtro"></button>
@@ -37,7 +37,7 @@
 
       <section class="all-products">
         <div class="product empacotavel">
-          <span><img src="/Imagens/atum1.png" alt="product-image" />
+          <span><img src="../Imagens/atum1.png" alt="product-image" />
           </span>
           <div class="product-description">
             <h3 class="nome">Peixe enlatado</h3>
@@ -54,7 +54,7 @@
           </div>
         </div>
         <div class="product">
-          <span><img src="/Imagens/atum2.png" alt="product-image" class="product-image"/>
+          <span><img src="../Imagens/atum2.png" alt="product-image" class="product-image"/>
           </span>
           <div class="product-description">
             <h3 class="nome">Peixe enlatado</h3>
@@ -71,7 +71,7 @@
           </div>
         </div>
         <div class="product empacotavel">
-          <span><img src="/Imagens/atum3.png" alt="product-image" class="product-image"/>
+          <span><img src="../Imagens/atum3.png" alt="product-image" class="product-image"/>
           </span>
           <div class="product-description">
             <h3 class="nome">Peixe enlatado</h3>
@@ -88,7 +88,7 @@
           </div>
         </div>
         <div class="product">
-          <span><img src="/Imagens/atum4.png" alt="product-image" class="product-image"/>
+          <span><img src="../Imagens/atum4.png" alt="product-image" class="product-image"/>
           </span>
           <div class="product-description">
             <h3 class="nome">Peixe enlatado</h3>
@@ -105,7 +105,7 @@
           </div>
         </div>
         <div class="product empacotavel">
-          <span><img src="/Imagens/pimenta1.png" alt="product-image" class="product-image"/>
+          <span><img src="../Imagens/pimenta1.png" alt="product-image" class="product-image"/>
           </span>
           <div class="product-description">
             <h3 class="nome">Peixe enlatado</h3>
@@ -122,7 +122,7 @@
           </div>
         </div>
         <div class="product">
-          <span><img src="/Imagens/pimenta2.webp" alt="product-image" class="product-image"/>
+          <span><img src="../Imagens/pimenta2.webp" alt="product-image" class="product-image"/>
           </span>
           <div class="product-description">
             <h3 class="nome">Peixe enlatado</h3>
@@ -139,7 +139,7 @@
           </div>
         </div>
         <div class="product empacotavel">
-          <span><img src="/Imagens/pimenta3.webp" alt="product-image" class="product-image"/>
+          <span><img src="../Imagens/pimenta3.webp" alt="product-image" class="product-image"/>
           </span>
           <div class="product-description">
             <h3 class="nome">Peixe enlatado</h3>
@@ -156,7 +156,7 @@
           </div>
         </div>
         <div class="product">
-          <span><img src="/Imagens/pimenta4.webp" alt="product-image" class="product-image"/>
+          <span><img src="../Imagens/pimenta4.webp" alt="product-image" class="product-image"/>
           </span>
           <div class="product-description">
             <h3 class="nome">Peixe enlatado</h3>
@@ -173,7 +173,7 @@
           </div>
         </div>
         <div class="product empacotavel">
-          <span><img src="/Imagens/tomate1.png" alt="product-image" class="product-image"/>
+          <span><img src="../Imagens/tomate1.png" alt="product-image" class="product-image"/>
           </span>
           <div class="product-description">
             <h3 class="nome">Peixe enlatado</h3>
@@ -190,7 +190,7 @@
           </div>
         </div>
         <div class="product">
-          <span><img src="/Imagens/tomate2.webp" alt="product-image" class="product-image"/>
+          <span><img src="../Imagens/tomate2.webp" alt="product-image" class="product-image"/>
           </span>
           <div class="product-description">
             <h3 class="nome">Peixe enlatado</h3>

@@ -12,13 +12,14 @@
 </head>
 
 <body>
+  
   <header>
     <span class="logo"><span class="shine">B</span>Conserves</span>
     <nav id="menu" class="navigation-bar">
-      <a href="/index.html">Página inicial</a>
-      <a href="/paginas/produtos.html">Produtos</a>
-      <a href="paginas/login.html">Contacto</a>
-      <a href="paginas/sobre nós.html">Sobre nós</a>
+      <a href="index.php">Página inicial</a>
+      <a href="paginas/produtos.php">Produtos</a>
+      <a href="paginas/login.php">Contacto</a>
+      <a href="paginas/sobre nós.php">Sobre nós</a>
     </nav>
     <span id="nav-button" class="nav-button">
       <span></span>
@@ -138,10 +139,10 @@
             </div>
           </div>
         </section>
-        <a class="more-products" href="./paginas/produtos.html">Ver mais...</a>
+        <a class="more-products" href=".produtos.php">Ver mais...</a>
       </section>
     </main>
-    <form id="suporte" class="user-feedback" action="">
+    <form id="suporte" class="user-feedback" method='post'>
       <label for="assunto">Assunto</label>
       <select name="assunto" id="assunto">
         <option value="sugestao">sugestão</option>
@@ -163,6 +164,13 @@
       </div>
     </div>
   </footer>
+  <?php
+    include('./php/conexao.php');
+    if (isset($_POST['mensagem'])) {
+      $mensagem = $_POST['mensagem'];
+      echo $mensagem;
+    }
+  ?>
 </body>
 
 </html>
