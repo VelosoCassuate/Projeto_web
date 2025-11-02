@@ -10,6 +10,46 @@
 </head>
 
 <body>
+
+<?php
+include("./../php/conexao.php");
+
+$email    = $_POST['email'] ?? '';
+$password = $_POST['password'] ?? '';
+
+$consulta = "SELECT email, chave_acesso 
+             FROM clientes 
+             WHERE email = ? AND chave_acesso = ? 
+             LIMIT 1";
+
+$stm = mysqli_prepare($conexao, $consulta);
+
+if (!$stm) {
+    die("Erro ao preparar consulta: " . mysqli_error($conexao));
+}
+
+mysqli_stmt_bind_param($stm, "ss", $email, $password);
+mysqli_stmt_execute($stm);
+
+$result = mysqli_stmt_get_result($stm);
+
+if ($result && mysqli_num_rows($result) > 0) {
+    // login ok
+    echo "Encontrado";
+} else {
+    // errado
+    echo "Credenciais inválidas";
+}
+
+mysqli_stmt_close($stm);
+mysqli_close($conexao);
+?>
+
+
+
+
+
+
   <header>
     <span class="logo"><span class="shine">B</span>Conserves</span>
     <nav id="menu" class="navigation-bar">
@@ -28,7 +68,7 @@
 
   
     <div class="login-container">
-      <form class="form" action="./../php/conexao.php" method="post">
+      <form class="form" method="post">
         <h2>Entrar</h2>
         <div class="campo">
           <input type="email" id="email" name="email" required>
